@@ -1,0 +1,90 @@
+@media (max-width: 760px) {
+
+    body {
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    header {
+        flex-direction: column;
+    }
+    ul {
+        text-align: center;
+    }
+    .event {
+        margin:auto;
+    }
+    .log_img {
+        display: none;
+    }
+    #register {
+        background-color: rgb(132, 14, 201);
+    }
+
+    #presentation {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        max-width: 100%;
+    }
+
+    #key-services {
+        max-width: 100%;
+    }
+
+    #key-services h2 {
+        max-width: 100%;
+    }
+
+    .services {
+        max-width: 100%;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        /* width: auto; */
+        /* padding: 2em; */
+    }
+    #key-services h2 {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_rigor {
+        margin: 50px;
+    }
+
+    
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contact {
+        width: auto;
+    }
+
+    .btn {
+        margin-left: 39%;
+    }
+
+    .box {
+        margin: auto;
+        width: 200px;
+        background-color: #c32aa3;
+        border-radius: 50px;
+        box-shadow: 0 0 50px #b315917c;
+        margin-bottom: 10px;
+    }
+    
+    .box:nth-child(2) {
+        background-color: #25d366;
+        box-shadow: 0 0 50px #25d3657e;
+    }
+
+    .social {
+        margin: none;
+    }
+}

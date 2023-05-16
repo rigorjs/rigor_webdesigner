@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rígor WebDesigner</title>
+    <link rel="stylesheet" href="/styles/style.css">
+     <!-- não precisa usar separado não man, ja que e no mesmo arquivo -->
+     <!-- vai dar conflitos se houver classes com o mesmo Nome -->
+    <link rel="stylesheet" href="/styles/mobile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div id="title">
+            <h1 class="nom">Rígor</h1>
+            <h1 class="sub"><span>WebDesigner</span></h1>
+        </div>
+
+        <ul>
+            <a href="#key-services"><li>Serviços</li></a>
+            <a href="#bibliography"><li>Sobre</li></a>
+            <!-- <a href=""><li>Social</li></a> -->
+            <!-- aqui fazemos a refetencia no atributo do (<a>) para que ele saiba o endereço que ele tem que buscar no corpo do html -->
+            <a href="#contact" id="register"><li>Entre em contato</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <div id="home">
+            <div id="presentation">
+                <h2 class="nome"><span>Igor Gabriel J Santos</span></h2>
+                <p class="event">Seja bem-vindo!</p>
+                <p class="motivation">"Com grandes poderes, vêm grandes responsábilidades"</p>
+            </div>
+            <div id="logo">
+                <img class="log_img" src="./components/images/www-amico.png" alt="logo">
+            </div>
+        </div>
+    </main>
+
+    <section id="key-services">
+        <h2>Serviços</h2>
+        <div class="services">
+            <div class="service">
+                <div id="service-1" class="service-img"></div>
+                <p>Criação de sites</p>
+            </div>
+            <div class="service">
+                <div id="service-2" class="service-img"></div>
+                <p>Identidade visual</p>
+            </div>
+            <div class="service">
+                <div id="service-3" class="service-img"></div>
+                <p>Projetos Web</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bibliography">
+        <div id="detail-1" class="detail">
+            <img src="./components/images/rigor_design.png" alt="imagem" class="img_rigor">
+            <div class="detail-description">
+                <h3>Quem somos?</h3>
+                <p>Olá, tudo bem? <br> Me chamo Igor Gabriel, tenho 20 anos e curso Análise e Desenvolvimento de Sistemas. <br>Sou também, o Web Designer responsável pelo desenvolvimento de sites desta empresa. <br>Apesar de sermos novos no mercado, temos o objetivo de auxiliar instituições no processo de divulgação e comunicação entre empresas e clientes por meio de sites <span>únicos</span> e <span>Inovadores</span>!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- aqui criamos um id para que o hiperlink percorra ate ele -->
+    <section id="contact" class="contacts">
+        <div class="contact">
+            <fieldset>
+                <legend>Entre em contato</legend>
+                <form class="form-ct" method="POST" action="https://formsubmit.co/igor.camila23@gmail.com">
+                    <input type="text" class="field" name="name" placeholder="Nome">
+                    <input type="text" class="field" name="email" placeholder="E-mail">
+                    <input type="text" class="field" name="phone" placeholder="Contato (WhatsApp)">
+                    <input type="submit" value="Enviar" class="btn">
+                
+                </form>
+                <!-- esse link do action ja envia direto para o email porem ele tem uma ação para quem recebe o email -->
+
+                <!-- <form action ="https://formsubmit.co/igor.camila23@gmail.com" method="POST">
+                    <input type=" text" name="name" >
+                    <input type=" e-mail" name="email" >
+                    <input type=" phone" name="phone" >
+                    <button type="submit"> Quero me escrever</button>
+              </form> -->
+
+            </fieldset>
+        </div>
+
+        <div class="social">
+            <div class="navbar">
+                <div class="box">
+                    <div class="icon instagram">
+                        <a href="https://instagram.com/rigor_webdesigner?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                    <p>Instagram</p>
+                </div>
+
+                <div class="box">
+                    <div class="icon whatsApp">
+                        <a href="https://wa.me/5511940331594?text=Olá, vim pela sua página, gostaria de saber mais sobre os seus serviços." target="_blank">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a>
+                    </div>
+                    <p>WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h3>Rígor <span>WebDesigner</span></h3>
+        <p>"Com grandes poderes, vêm grandes responsábilidades"</p>
+        <p><span>Entre em contato:</span> igorga.jsantos@gmail.com</p>
+        <p><span>Ou pelo telefone:</span> (11) 9 6659-1694</p>
+    </footer>
+</body>
+</html>
